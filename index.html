@@ -53,19 +53,27 @@
         </div>
       </header>
       <h4>How To Play:</h4>
-      <p>Guess a number between 1 - 6, and the slider will tell you if you got it right. Good luck!</p>
+      <p>
+        Guess a number between 1 - 6, and the slider will tell you if you got it
+        right. Good luck!
+      </p>
       <main class="mdl-layout__content">
-        <div id="slider-value">
-          ?
-        </div> 
-         <!-- Slider with Starting Value -->
+        <div id="slider-value">?</div>
+        <!-- Slider with Starting Value -->
         <!-- Note: I added and ID to this component, so I could reference it in code -->
         <!-- Note: I also placed it inside a "label" for accessability -->
         <label>
           Slider's Value
-          <input id = "slider" class="mdl-slider mdl-js-slider" type="range"
-          min="1" max="6" value="2" tabindex="0"
-          onchange = "updateSliderValue(this.value)">
+          <input
+            id="slider"
+            class="mdl-slider mdl-js-slider"
+            type="range"
+            min="1"
+            max="6"
+            value="2"
+            tabindex="0"
+            onchange="updateSliderValue(this.value)"
+          />
         </label>
         <!-- basic text -->
         <p></p>

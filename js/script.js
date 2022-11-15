@@ -27,12 +27,20 @@ function updateSliderValue(valueFromSlider) {
   // process of function
   if (valueFromSlider == randomNumber) {
     document.getElementById("answer").innerHTML =
-      "The answer was: " + randomNumber + "! " + "Congratulations! You did it. " + "To Play Again, Please Restart The Page."
+      "The answer was: " +
+      randomNumber +
+      "! " +
+      "Congratulations! You did it. " +
+      "To Play Again, Please Restart The Page."
   }
-  
-  // executed block of code, when the first condition is true 
+
+  // executed block of code, when the first condition is true
   if (valueFromSlider != randomNumber) {
     document.getElementById("answer").innerHTML =
-      "The answer was: " + randomNumber + "! " + "Sorry... " + "To Try Again, Please Restart The Page."
+      "The answer was: " +
+      randomNumber +
+      "! " +
+      "Sorry... " +
+      "To Try Again, Please Restart The Page."
   }
 }
